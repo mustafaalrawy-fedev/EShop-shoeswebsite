@@ -1,0 +1,58 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Air Runner Pro",
+            "image": "/product-1.png",
+            "price": 199.99
+        },
+        {
+            "id": 2,
+            "name": "Air Runner Pro",
+            "image": "/product-2.png",
+            "price": 199.99
+        },
+        {
+            "id": 3,
+            "name": "Air Runner Pro",
+            "image": "/product-3.png",
+            "price": 199.99
+        },
+        {
+            "id": 4,
+            "name": "Air Runner Pro",
+            "image": "/product-4.png",
+            "price": 199.99
+        },
+        {
+            "id": 5,
+            "name": "Air Runner Pro",
+            "image": "/product-5.png",
+            "price": 199.99
+        },
+        {
+            "id": 6,
+            "name": "Air Runner Pro",
+            "image": "/product-6.png",
+            "price": 199.99
+        },
+        {
+            "id": 7,
+            "name": "Air Runner Pro",
+            "image": "/product-7.png",
+            "price": 199.99
+        },
+        {
+            "id": 8,
+            "name": "Air Runner Pro",
+            "image": "/product-8.png",
+            "price": 199.99
+        },
+        {
+            "id": 9,
+            "name": "Air Runner Pro",
+            "image": "/product-9.png",
+            "price": 199.99
+        }
+    ]
+}

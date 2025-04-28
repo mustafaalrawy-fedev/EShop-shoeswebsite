@@ -1,0 +1,51 @@
+@import "tailwindcss";
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+html {
+    scroll-behavior: smooth;
+}
+
+@theme {
+  /* Light Mode */
+  --color-backgroundColor: #f8f5ef;
+  --color-mainTextColor: #1f1f1f;
+  --color-secondaryColor: #B0B0B0;
+  /* --color-accentsColor: #FF5A5F; */
+  --color-accentsColor: #7ccf00;
+  --color-cardColor: #f9fafb;
+  /* Dark Mode */
+  --color-backgroundDarkColor: #1f1f1f;
+  --color-mainTextDarkColor: #FFFFFF;
+  --color-secondaryDarkColor: #5A5A5A;
+  /* --color-accentDarkColor: #FF5A5F; */
+  --color-accentDarkColor: #7ccf00;
+  --color-cardDarkColor: #262626;
+
+  /* Social Color */
+  --color-facebookColor: #1877F2;
+  --color-twitterColor: #1DA1F2;
+  --color-linkedInColor: #0A66C2;
+  --color-instagramColor: #E4405F;
+}
+
+@layer components {
+  .container {
+    @apply min-w-full md:px-20 px-5; 
+  }
+  .main-transition {
+    @apply transition-all duration-500;
+  }
+  .input {
+    @apply border border-secondaryColor dark:border-secondaryDarkColor py-1.5 px-5 rounded-md w-full outline-accentsColor dark:outline-accentDarkColor caret-accentsColor dark:caret-accentDarkColor;
+  }
+  .input-group {
+    @apply flex flex-col gap-2;
+  }
+}
+label {
+  @apply text-mainTextColor/80 dark:text-mainTextDarkColor/80;
+}
+textarea {
+  @apply w-full h-52 border border-secondaryColor dark:border-secondaryDarkColor rounded-md p-5 outline-accentsColor dark:outline-accentDarkColor caret-accentsColor dark:caret-accentDarkColor;
+}
